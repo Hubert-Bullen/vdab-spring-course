@@ -7,4 +7,10 @@ public class Bear extends Animal {
     public Bear(String s) {
         super(s);
     }
+
+
+    @Override
+    public void feed(Food food) {
+        super.feed(food);
+    }
 }

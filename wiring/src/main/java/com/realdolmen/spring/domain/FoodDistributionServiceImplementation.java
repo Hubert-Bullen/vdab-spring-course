@@ -1,19 +1,21 @@
 package com.realdolmen.spring.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * Created by Hyuberuto on 09/06/15.
  */
+@Component
 public class FoodDistributionServiceImplementation implements FoodDistributionService {
 
+    @Autowired
     private FoodRepository repository;
 
-    @Autowired
-    public FoodRepository getRepository() {
-        return repository;
+
+    public FoodDistributionServiceImplementation() {
     }
 
     @Override

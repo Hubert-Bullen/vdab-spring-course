@@ -16,12 +16,9 @@ public class PairiDaiza implements Zoo {
     private List<Animal> animals = new ArrayList<>();
 
     // TODO fetch the FoodDistributionService
+    @Autowired //best wel op de field , niet op de getter of constructor zoals in de slides staat.
     private FoodDistributionServiceImplementation distributionServiceImplementation;
 
-    @Autowired
-    public FoodDistributionServiceImplementation getDistributionServiceImplementation() {
-        return distributionServiceImplementation;
-    }
 
     public PairiDaiza(String name) {
         this.name = name;

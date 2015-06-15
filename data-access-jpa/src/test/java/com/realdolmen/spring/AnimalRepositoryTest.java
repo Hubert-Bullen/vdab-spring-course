@@ -64,3 +64,5 @@ public class AnimalRepositoryTest {
         return animalRepository.findAll().size();
     }
 }
+
+// To checkout another branch from origin just use git checkout name

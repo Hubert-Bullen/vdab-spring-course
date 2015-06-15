@@ -49,8 +49,10 @@ public class FoodRepositoryTest {
         List<Food> foods = foodRepository.findFoodForAnimalType(Animal.Type.donkey);
         assertEquals(3, foods.size());
         assertEquals("Apple", foods.get(0).getName());
+        System.out.println(foods.get(0).getName());
         assertEquals("Carrot", foods.get(1).getName());
-        assertEquals("Salmon", foods.get(2).getName());
+        System.out.println(foods.get(1).getName());
+        assertEquals("Banana", foods.get(2).getName());
     }
 
     private int countAllFood() {

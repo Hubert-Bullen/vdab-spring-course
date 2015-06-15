@@ -14,5 +14,6 @@ public class Main {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new SpringApplicationBuilder(ZooConfig.class).profiles("production").build().run(args);
         context.getBean(FoodDistributionService.class).feedAllAnimal();
+
     }
 }
